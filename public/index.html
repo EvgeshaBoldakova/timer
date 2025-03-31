@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Timer</title>
+
+  <link rel="stylesheet" href="public/assets/styles/main.css">
+  <link rel="icon" href="data:,">
+</head>
+
+<body>
+<div class="wrapper">
+  <header>
+    <h1>TIMER</h1>
+  </header>
+  <main>
+    <div id="blockStart" class="blockStart">
+      <h2>Enter the time in minutes:</h2>
+      <div class="startingTime">
+        <button id="reduction" class="reduction">-</button>
+        <p id="time" class="time">0</p>
+        <button id="augmentation" class="augmentation">+</button>
+      </div>
+      <div>
+        <button id="start" class="start">START</button>
+      </div>
+    </div>
+
+    <div id="blockFinish" class="blockFinish">
+      <div id="countdown" class="countdown"></div>
+    </div>
+  </main>
+  <footer>
+    <div id ="stopMessage" class="stopMessage">
+      <h2>Time is up!</h2>
+    </div>
+  </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+<script src="public/assets/scripts/bundle.js"></script>
+</body>
+
+</html>
